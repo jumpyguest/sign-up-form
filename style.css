@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-h1 {
-    color: blue;
-    font-family: Norse-Bold, sans-serif;
-}
-
 @font-face {
     font-family: Norse-Bold;
     src: url(./font/Norse-Bold.otf);
@@ -16,16 +11,14 @@ h1 {
 body {
     display: flex;
     flex-direction: row;
-    text-align: center;
 }
 
 .background-container {
-    width: 33%;
+    width: 35vw;
     height: 100vh;
     background: center/cover url("./images/megan-clark-Sv6H_Q8Xf0w-unsplash.jpg");
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
 }
 
 .logo-section {
@@ -50,8 +43,77 @@ body {
     color: white;
     margin-top: 22em;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 a {
     color: inherit;
+}
+
+.form-container {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-section, .button-section {
+    background-color: rgb(241, 239, 239);
+    flex-direction: column;
+}
+
+.text-section {
+    padding: 100px 150px 20px 40px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.form-main {
+    box-shadow: 0px 5px 10px #b9b8b8;
+    margin: 0px 0px 8px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-main p {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 40px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px 30px;
+    gap: 8em;
+}
+
+.column-1, .column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+label {
+    display: block;
+    font-size: smaller;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input {
+    height: 2em;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    /* width: 100%; */
+    padding: 7px;
+    font-size: 14px;
+}
+
+input[type='text']:invalid,
+input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  /* box-shadow: none; */
 }
