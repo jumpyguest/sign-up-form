@@ -32,29 +32,29 @@
                 <div class="column-1">
                     <div class="form-name">
                         <label for="name">FIRST NAME</label>
-                        <input type="text" id="name" name="name" value="" size="30">
+                        <input type="text" id="name" name="name" value="" size="30" maxlength="50">
                     </div>
                     <div class="form-email">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" value="" size="30">
+                        <input type="email" id="email" name="email" value="" size="30" maxlength="50">
                     </div>
                     <div class="form-password">
                         <label for="user-password">PASSWORD</label>
-                        <input type="password" id="user-password" name="password" value="" size="30">
+                        <input type="password" id="user-password" name="password" value="" size="30" maxlength="12" minlength="8" pattern="\w{8,12}$" title="Password must be 8-12 characters">
                     </div>
                 </div>
                 <div class="column-2">
                     <div class="form-surname">
                         <label for="surname">LAST NAME</label>
-                        <input type="text" id="surname" name="surname" value="" size="30">
+                        <input type="text" id="surname" name="surname" value="" size="30" maxlength="30">
                     </div>
                     <div class="form-phone-number">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="text" id="phone-number" name="phone-number" value="" size="30">
+                        <input type="text" id="phone-number" name="phone-number" value="" size="30" maxlength="20" title="Enter country code first i.e., +65 12345678" pattern="\+\d{1,2}\s*\d+">
                     </div>
                     <div class="form-conf-password">
-                        <label for="user-confpassword">PASSWORD</label>
-                        <input type="password" id="user-confpassword" name="confpassword" value="" size="30">
+                        <label for="user-confpassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="user-confpassword" name="confpassword" value="" size="30" maxlength="12" minlength="8" pattern="\w{8,12}$" title="Password must be 8-12 characters">
                     </div>
                 </div>
             </div>
